@@ -91,14 +91,14 @@ content:
   - title: Education
     layout: list
     content:
-      - layout: top-left
+      - layout: left
         title: Sharif university of Technology
         sub_title: B.Sc. Computer Engineering
         caption: 2017-present
         # quote: >
         #   Short institution or course description (optional)
         description: | # this will include new lines to allow paragraphs
-          GPA: 17.90/20, **last six semesters: 18.51/20**
+          GPA: 17.90/20 (**last six semesters: 18.51/20**)
 
           **Related courses**
 
@@ -107,12 +107,12 @@ content:
           data structures and algorithms, introduction to bioinformatics, modern information retrieval,
           design of algorithms, probability and statistics, discrete structures.
       
-      - layout: top-left
+      - layout: left
         title: Allame Amini highschool
         sub_title: Diploma
         caption: 2013-2017
         # quote: >
-        #   Short institution or course description (optional)
+        # Short institution or course description (optional)
         description: | # this will include new lines to allow paragraphs
           I received my Diploma in Mathematics and Physics from Allame Amini highschool,
           where I was ranked 24th out of 350k students in Iranian nationwide mathematics
