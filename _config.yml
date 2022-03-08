@@ -40,7 +40,7 @@ linkedin_username: alireza-dizaji-43a634194
 ### About Section
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/me.jpeg
-about_content: | # this will include new lines to allow paragraphs
+about_content: | 
   **CV: [PDF](https://alirezadizaji.github.io/files/CV.pdf)**
 
   My name is Alireza Dizaji and currently I am a B.Sc. student at **Sharif University of Technology**,
@@ -56,38 +56,82 @@ about_content: | # this will include new lines to allow paragraphs
   (**this website is still under construction...**)
 
 content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: left
-        border: weak  # Value of `weak` will display a weak border below this item. # Any 
-                      # other value (or no value) means no border will be displayed
-        title: Project name
-        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        link_text: Link Text
-        additional_links:
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        quote: >
-          Short overview of the project (optional)
-        description: | # this will include new lines to allow paragraphs
-          Description about the work on/with the project
+  # - title: Projects # Title for the section
+  #   layout: list # Type of content section (list/text)
+  #   content:
+  #     - layout: left
+  #       border: weak  # Value of `weak` will display a weak border below this item. # Any 
+  #                     # other value (or no value) means no border will be displayed
+  #       title: Project name
+  #       link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+  #       link_text: Link Text
+  #       additional_links:
+  #         - title:  Github page for project (eg. sproogen/modern-resume-theme)
+  #           icon: fab fa-github
+  #           url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+  #         - title:  Github page for project (eg. sproogen/modern-resume-theme)
+  #           icon: fab fa-github
+  #           url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+  #       quote: >
+  #         Short overview of the project (optional)
+  #       description: | 
+  #         Description about the work on/with the project
   - title: Experience
     layout: list
     content:
-      - layout: right
-        title: Company name
-        sub_title: Job title
-        caption: Date Range (eg. November 2016 - present)
-        link: Link to company (optional)
-        quote: >
-          Short description of the company (optional)
-        description: | # this will include new lines to allow paragraphs
-          Description of role
+      - layout: left
+        title: AI-Med
+        sub_title: R&D scientist
+        caption: April 2021 - present
+        link: https://aimed-sharif.ir/
+        description: | 
+          AI-Med is a multidisciplinary research consortium **utilizing artificial intelligence
+          technologies to improve the quality and accuracy of digital health services**.
+          since April 2021, I joined as **research and development scientist** here where
+          we have designed a wide-range of deep-learning experiments (via Pytorch) to provide
+          better **detection** and **localization** of abnormalities for **mammography screening**.
+          our methods have reached and even gone beyond the state-of-the-art algorithms on **public dataset (DDSM)**.
+          in order to maintain our results same for the **in-private dataset**, we are currently
+          developing **weakly-supervised methods** to more precisely label and generate ground-truth ROIs for them.
+          Moreover, we have designed several side tools to get real-time feedbacks from experienced radiologists for labeling. 
+      
+      - layout: left
+        title: Sharif University of Technology
+        sub_title: Research Assistant
+        caption: June 2020 - March 2021
+        description: | 
+          I joined [**DML lab**](http://dml.ce.sharif.edu/dmlsite/) as a **Research assistant** where I was working
+          on the impact of **contrastive learning** approaches on **deep reinforcement-learning** algorithms.
+          to be more specific, I implemented [**CURL**](https://arxiv.org/pdf/2004.04136.pdf?ref=https://githubhelp.com) 
+          and [**SIMCLR**](https://arxiv.org/pdf/2002.05709.pdf) (via Pytorch) algorithms to improve movement of an agent
+          within Maze environment.
+
+      - layout: left
+        title: Sharif University of Technology
+        sub_title: Teaching Assistant
+        caption: June 2020 - March 2021
+        description: | 
+          since my second semester, I have collaborated as a **teaching assistant** with several
+          faculty members of **computer engineering department**. all courses that I have contributed are listed below:
+
+          **Spring 2021**
+          - Machine learning (M.Sc. course), Dr. Rohban
+          - Modern information retrival, Dr. Soleymani
+          
+          
+          **Fall 2020**
+          - Artificial intelligence, Dr. Rohban
+          - Linear algebra, Prof. Rabiee
+          
+          
+          **spring 2020**
+          - Computer architecture, Prof. Asadi
+          - Data structures and algorithms, Dr. Safarnejad broujeni
+          
+          
+          **spring 2019**
+          - Advanced programming, Mr. Hatami
+
   - title: Education
     layout: list
     content:
@@ -97,7 +141,7 @@ content:
         caption: 2017-present
         # quote: >
         #   Short institution or course description (optional)
-        description: | # this will include new lines to allow paragraphs
+        description: | 
           GPA: 17.90/20 (**last six semesters: 18.51/20**)
 
           **Related courses**
@@ -113,14 +157,14 @@ content:
         caption: 2013-2017
         # quote: >
         # Short institution or course description (optional)
-        description: | # this will include new lines to allow paragraphs
+        description: | 
           I received my Diploma in Mathematics and Physics from Allame Amini highschool,
           where I was ranked 24th out of 350k students in Iranian nationwide mathematics
           exam (Konkur).
 
   - title: A Little More About Me
     layout: text
-    content: | # this will include new lines to allow paragraphs
+    content: | 
       Alongside my interests in science and technology, some of my other hobbies are:
         - Reading books (Fantasy genre mostly)
         - Watching movies
