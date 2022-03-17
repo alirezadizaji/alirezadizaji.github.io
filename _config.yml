@@ -136,7 +136,7 @@ content:
     layout: list
     content:
       - layout: left
-        title: Sharif university of Technology
+        title: Sharif University of Technology
         sub_title: B.Sc. Computer Engineering
         caption: 2017-present
         # quote: >
