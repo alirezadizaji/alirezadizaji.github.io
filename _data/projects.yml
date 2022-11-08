@@ -7,8 +7,47 @@
     Currently, several metrics have been proposed to evaluate the faithfulness of current state-of-the-art explanation methods
     in graph neural networks. However, there are several drawbacks among these evaluation metrics 
     that make their fair comparison challenging. Through this project, we mentioned these drawbacks 
-    and instead proposed novel solutions with a guideline assisting in examining the focus of these 
+    and instead proposed novel solutions with a guideline assisting in analyzing the focus of these 
     explainers better, and the target Graph Neural Networks. (**Submitted to CVPR 2023**)
 
+
+
     <span style="color:#6b0303"> Ashkan Khakzar, **Alireza Dizaji**, Razieh Rezaei, Anees Kazi, Nassir Navab, Daniel Rueckert</span> 
-    <br>
+    <br><br>
+
+
+- name: LAP
+  image: images/lap.png
+  description: |
+    ## **LAP:An Attention-Based Module for Faithful Interpretation and Knowledge Injection in Convolutional Neural Networks**
+    
+    ---
+    Through this project, we devised a self-interpretable model which could be easily injected into any CNN network.
+    The method is a novel inspiration of both pooling and attention-based methods representing promising results 
+    on many experiments passing state-of-the-art methods.
+    (**Submitted to CVPR 2023**)
+    
+    
+    <span style="color:#6b0303"> Rassa Ghavami Modegh, Ahmad Salimi, **Alireza Dizaji**, Hamid R. Rabiee</span> 
+    <br><br>
+
+
+- name: Mammo
+  image: images/lap.png
+  description: |
+    ## **Malignancy classification and lesion segmenation in mammography screening using semi/weak supervised methods.**
+    
+    ---
+    Breast cancer is considered the deadliest one among women. Our main goal is to provide 
+    an AI assistant product to help radiologists with more accurate and swifter decision-making 
+    through mammography screening and therefore increase the survival rate of our Iranian mothers 
+    and ladies. As a member of the scientific team, I have contributed to a huge project 
+    containing multiple sub-branches, including pre and post-image processing, malignancy classification, and lesion segmentation,
+    using mostly weakly and semi-supervised methods due to insufficient annotated data. (In writing process to be submitted for **Radiology Journal**)
+
+    
+    <span style="color:#6b0303"> Nasrin Ahmadinejad, Nahid Sadighi, Rassa Ghavami Modegh,
+     **Alireza Dizaji**, Amin Rezaei, Maryam Rahmani, Arvin Arian, Salome Maghsudlu,
+    Saeedeh Shokri, Niloofar Pashaeifakhri, Mehran Arab Ahmadi, Ali Sefidmouy, 
+    Mahdi Ghaznavi, Amir Tofighi Zavareh, Hamed Dashti, Hamid R. Rabiee, Masoumeh Gity</span> 
+    <br><br>
