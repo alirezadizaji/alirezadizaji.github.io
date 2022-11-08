@@ -3,7 +3,7 @@ repository: alirezadizaji/alirezadizaji.github.io
 # favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
 
 ### Content configuration version
-version: 2
+version: 1
 
 ### Personal info
 name: Alireza Dizaji
@@ -38,43 +38,27 @@ linkedin_username: alireza-dizaji-43a634194
 # google_analytics: "UA-00000000-0"
 
 ### About Section
-# about_title: About Me (Use this to override about section title)
+about_title: About Me
 about_profile_image: images/me.jpeg
 about_content: | 
   **CV: [PDF](https://alirezadizaji.github.io/files/CV.pdf)**
 
-  My name is Alireza Dizaji and currently I am a B.Sc. student at **Sharif University of Technology**,
-  **Computer Engineering** field. My research career has begun since August 2020, when I 
-  joined the [**DML lab**](http://www.dml.ir/) focusing on the applications of deep learning
-  methods within a **computer vision** and **reinforcement learning** project, under supervision
-  of Prof. Rabiee. since April 2021, I have joined [**AI-Med company**](https://www.linkedin.com/company/aimedic/mycompany/)
-  where I have been researching deep learning methods with a focus on **Medical Image Analysis**,
-  under supervision of Prof. Rabiee. My research interests are **computer vision**, **machine learning**,
-  **reinforcement learning**, **autonomous driving** and **AI for healthcare**.
+  (Last updated: Nov 2022) Hi :D, My name is Alireza Dizaji and I am a graduated B.Sc. student
+  at the **Sharif University of Technology**, **Computer Engineering** field. 
+  I have +3 years of research experience in the fields of computer vision and machine learning; 
+  For the last seven months, I was a research intern at the **Technical University of Munich** 
+  working on explainability in graph neural networks under the co-supervision of Prof. Navab and 
+  Prof. Lueckert. For +1.5 years, I am working as an R&D scientist at AI-Med where our 
+  focus is to solve and enhance current problems of medical imaging, particularly 
+  mammography screening, under the supervision of Prof. Rabiee. I also have 1-year of experience 
+  in the Reinforcement Learning field working on agent movement within a maze using 
+  contrastive learning methods. My research interests are **graph neural networks**, 
+  **Medical imaging**, **autonomous driving**, and bringing reasoning towards Machine learning methods
+  i.e. **interpretability**.
   
   
 
 content:
-  # - title: Projects # Title for the section
-  #   layout: list # Type of content section (list/text)
-  #   content:
-  #     - layout: left
-  #       border: weak  # Value of `weak` will display a weak border below this item. # Any 
-  #                     # other value (or no value) means no border will be displayed
-  #       title: Project name
-  #       link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-  #       link_text: Link Text
-  #       additional_links:
-  #         - title:  Github page for project (eg. sproogen/modern-resume-theme)
-  #           icon: fab fa-github
-  #           url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-  #         - title:  Github page for project (eg. sproogen/modern-resume-theme)
-  #           icon: fab fa-github
-  #           url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-  #       quote: >
-  #         Short overview of the project (optional)
-  #       description: | 
-  #         Description about the work on/with the project
   - title: Experience
     layout: list
     content:

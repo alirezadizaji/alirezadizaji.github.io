@@ -1,0 +1,14 @@
+- name: GNN Explainability
+  image: images/tum_gnn.png
+  description: |
+    ## **How to Evaluate Your GNN Explanation: A User's Manual for Interpreting the explanations**
+    
+    ---
+    Currently, several metrics have been proposed to evaluate the faithfulness of current state-of-the-art explanation methods
+    in graph neural networks. However, there are several drawbacks among these evaluation metrics 
+    that make their fair comparison challenging. Through this project, we mentioned these drawbacks 
+    and instead proposed novel solutions with a guideline assisting in examining the focus of these 
+    explainers better, and the target Graph Neural Networks. (**Submitted to CVPR 2023**)
+
+    <span style="color:#6b0303"> Ashkan Khakzar, **Alireza Dizaji**, Razieh Rezaei, Anees Kazi, Nassir Navab, Daniel Rueckert</span> 
+    <br>

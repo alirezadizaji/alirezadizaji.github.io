@@ -1,0 +1,30 @@
+<div class="container publications-container">
+    <h3>{{ site.publications_title | default: "Publications" }}</h3>
+    {% for publication in site.data.publications %}
+      <div class="row clearfix publication">
+        <div class="col-xs-12 col-sm-5 col-md-6 no-print">
+          <span class="pub-img" style="background-image: url({{ publication.image | relative_url }})" />
+        </div>
+  <!--       <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 left-column">
+          <h4>{{ project.name }}</h4>
+          {%- if project.link -%}
+            {% include a.html href=project.link class="project-link" %}{{ project.link }}</a>
+          {%- endif -%}
+          {%- if project.github -%}
+            <p class="no-print">
+              <a href="https://github.com/{{ project.github }}" target="_blank">
+                <i class="fa fa-github" title="{{ project.name }} Github link"></i>
+              </a>
+            </p>
+          {%- endif -%}
+        </div> -->
+        <div class="col-xs-12 col-sm-7 col-md-6 col-print-12">
+          {%- if publication.quote -%}
+            <p class="quote">{{ publication.quote }}</p>
+          {%- endif -%}
+          {{ publication.description | strip | markdownify }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  
