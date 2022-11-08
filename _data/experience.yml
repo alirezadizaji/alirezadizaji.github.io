@@ -1,23 +1,61 @@
-# - name: Sharif Univeristy of Technology
-#   dates: 2017 - Present
-#   qualification: B.Sc. Computer Engineering
-#   description: | # this will include new lines to allow paragraphs
-#     Studying Computer Engineering at [Computer Engineering Department](http://ce.sharif.edu/).
-#     **Related Courses:**
+- company: Technical University of Munich
+  job_title: Research Assistant
+  dates: May 2022 - Nov 2022
+  description: |
+    Through these seven months, I have been working under the co-supervision of Prof. 
+    Navab and Prof. Rueckert, where our main focus is to analyze the drawbacks of current 
+    evaluation metrics for explanation methods in graph neural networks, and instead 
+    devise a new evaluation metric to better represent the faithfulness of these explainers.
+
+
+- company: CommaMed (formed AI-Med)
+  job_title: R&D Scientist
+  dates: April 2021 - Present
+  description: |
+    For more than a year and a half, I have been collaborating with the CommaMed start-up, 
+    which our goal is to both accelerate and increase the accuracy of diagnosis 
+    by devising novel AI methods. During this duration:
+    * We have been developing multiple semi/weak supervision methods to fill the absence
+    of sufficient data, and our framework is capable of diagnosing malignancy and localizing 
+    highly risk abnormalities with low miss rates. 
+    * In addition, I have contributed to the mentorship and management of interns, guiding
+    them through a sub-branch of projects including devising and implementing more semi-supervised 
+    methods with higher accuracy.
+    * For some reasons, including making run-time faster, I have also transported our python codes to C++, using Libtorch.
+
+
+- company: Sharif University of Technology
+  job_title: Research Assistant
+  dates: August 2020 - March 2021
+  description: |
+    In August, I joined [**DML lab**](http://dml.ce.sharif.edu/dmlsite/) as a **Research assistant** where I was working
+    on the impact of **contrastive learning** approaches on **deep reinforcement-learning** algorithms.
+    to be more specific, I implemented [**CURL**](https://arxiv.org/pdf/2004.04136.pdf?ref=https://githubhelp.com) 
+    and [**SIMCLR**](https://arxiv.org/pdf/2002.05709.pdf) (via Pytorch) algorithms to improve the movement of an agent
+    within the Maze environment.
+
+
+- company: Sharif University of Technology
+  job_title: Teaching Assistant
+  dates: Februrary 2019 - July 2021
+  description: |
+    Since my second semester, I have collaborated as a **teaching assistant** with several
+    faculty members of **computer engineering department**. All courses that I have contributed to are listed below:
+
+    **Spring 2021**
+    - Machine learning (M.Sc. course), Dr. Rohban
+    - Modern information retrival, Dr. Soleymani
     
-#     Convolutional Neural Networks (online, audited)
-#     Machine Learning (graduate), 
-#     Artificial Intelligence,
-#     Linear Algebra,
-#     Signals & Systems,
-#     Probability and Statistics,
-#     Design of Algorithms,
-#     Data Structures and Algorithms,
-#     Discrete Structures,    
     
-# - name: Allameh Helli High School
-#   dates: 2013-2017
-#   qualification: Diploma
-#   description: |
-#     I received my Diploma in Mathematics and Physics from Allameh Helli, 
-#     affiliated with the National Organization for the Development of Exceptional Talents (NODET).
+    **Fall 2020**
+    - Artificial intelligence, Dr. Rohban
+    - Linear algebra, Prof. Rabiee
+    
+    
+    **spring 2020**
+    - Computer architecture, Prof. Asadi
+    - Data structures and algorithms, Dr. Safarnejad broujeni
+    
+    
+    **spring 2019**
+    - Advanced programming, Mr. Hatami

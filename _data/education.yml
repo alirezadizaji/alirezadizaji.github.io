@@ -1,23 +1,22 @@
-# - name: Sharif Univeristy of Technology
-#   dates: 2017 - Present
-#   qualification: B.Sc. Computer Engineering
-#   description: | # this will include new lines to allow paragraphs
-#     Studying Computer Engineering at [Computer Engineering Department](http://ce.sharif.edu/).
-#     **Related Courses:**
+- name: Sharif University of Technology
+  dates: Sep 2017 - Sep 2022
+  qualification: B.Sc. Computer Engineering
+  description: | # this will include new lines to allow paragraphs
+    Studying Computer Engineering at [Computer Engineering Department](http://ce.sharif.edu/).
+    GPA: 17.93/20 (**last six semesters: 18.51/20**)
+
+    **Related courses**
+
+    Convolutional neural networks for visual recognition (audited, online Stanford),
+    machine learning (audited, online Stanford), artificial intelligence, linear algebra,
+    data structures and algorithms, introduction to bioinformatics, modern information retrieval,
+    design of algorithms, probability and statistics, discrete structures.
+         
     
-#     Convolutional Neural Networks (online, audited)
-#     Machine Learning (graduate), 
-#     Artificial Intelligence,
-#     Linear Algebra,
-#     Signals & Systems,
-#     Probability and Statistics,
-#     Design of Algorithms,
-#     Data Structures and Algorithms,
-#     Discrete Structures,    
-    
-# - name: Allameh Helli High School
-#   dates: 2013-2017
-#   qualification: Diploma
-#   description: |
-#     I received my Diploma in Mathematics and Physics from Allameh Helli, 
-#     affiliated with the National Organization for the Development of Exceptional Talents (NODET).
+- name: Allameh Amini highschool
+  dates: 2013-2017
+  qualification: Diploma
+  description: |
+    I received my Diploma in Mathematics and Physics from Allame Amini highschool,
+    where I was ranked 24th out of 350k students in Iranian nationwide mathematics
+    exam (Konkur).
