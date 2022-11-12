@@ -33,7 +33,7 @@
 
 
 - name: Mammo
-  image: images/lap.png
+  image: images/mammo.png
   description: |
     ## **Malignancy classification and lesion segmenation in mammography screening using semi/weak supervised methods.**
     
