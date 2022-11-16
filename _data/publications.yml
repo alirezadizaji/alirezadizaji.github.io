@@ -8,7 +8,7 @@
     in graph neural networks. However, there are several drawbacks among these evaluation metrics 
     that make their fair comparison challenging. Through this project, we mentioned these drawbacks 
     and instead proposed novel solutions with a guideline assisting in analyzing the focus of these 
-    explainers better, and the target Graph Neural Networks. (**Submitted to CVPR 2023**)
+    explainers better, and the target Graph Neural Networks.
 
 
 
@@ -25,7 +25,6 @@
     Through this project, we devised a self-interpretable model which could be easily injected into any CNN network.
     The method is a novel inspiration of both pooling and attention-based methods representing promising results 
     on many experiments passing state-of-the-art methods.
-    (**Submitted to CVPR 2023**)
     
     
     <span style="color:#6b0303"> Rassa Ghavami Modegh, Ahmad Salimi, **Alireza Dizaji**, Hamid R. Rabiee</span> 
