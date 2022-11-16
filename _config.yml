@@ -43,7 +43,7 @@ about_profile_image: images/me.jpeg
 about_content: | 
   **CV: [PDF](https://alirezadizaji.github.io/files/CV.pdf)**
 
-  (Last updated: Nov 2022) Hi :D, My name is Alireza Dizaji and I am a graduated B.Sc. student
+  (Last updated: Nov 2022) My name is Alireza Dizaji and I am a graduated B.Sc. student
   at the **Sharif University of Technology**, **Computer Engineering** field. 
   I have +3 years of research experience in the fields of computer vision and machine learning; 
   For the last seven months, I was a research intern at the **Technical University of Munich** 
@@ -52,10 +52,8 @@ about_content: |
   focus is to solve and enhance current problems of medical imaging, particularly 
   mammography screening, under the supervision of Prof. Rabiee. I also have 1-year of experience 
   in the Reinforcement Learning field working on agent movement within a maze using 
-  contrastive learning methods. My research interests are **graph neural networks**, 
-  **Medical imaging**, **autonomous driving**, and bringing reasoning towards Machine learning methods
-  i.e. **interpretability**.
-  
+  contrastive learning methods. My research interests are (from highest to lowest priority) **Learning on Graphs** and **Graph Neural Networks**, 
+  **Explainable Machine Learning**, **AI for healthcare**, **Reinforcement Learning**.
 more_content: |
       Alongside my interests in science and technology, some of my other hobbies are:
         - Reading books (Fantasy genre mostly)
