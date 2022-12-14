@@ -161,11 +161,11 @@ content:
         and <i> Harry Potter </i> series in English, both significantly (mostly the first two ones) 
         have changed my attitude towards faith, our being, and our path in our lives; 
         Indeed after reading them, I experienced how great books could marvelously direct your thought, 
-        and I always ask for or suggest great books preferably in the fantasy genre.  
+        and I always ask for or suggest such books preferably in the fantasy genre.  
         - Watching movies
         - Travelling and nature
 ### Footer
-footer_show_references: true
+footer_show_references: false
 # references_title: References on request (Override references text)
 
 ### Build settings
