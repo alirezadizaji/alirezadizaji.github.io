@@ -43,14 +43,14 @@ about_profile_image: images/me.jpeg
 about_content: | 
   **CV: [PDF](https://alirezadizaji.github.io/files/CV.pdf)**
 
-  (Last updated: Dec. 2022) My name is Alireza Dizaji and I have recently been graduated as a Bachelor of Science student
+  (Last updated: Dec. 2022) My name is Alireza Dizaji and I have recently graduated as a Bachelor of Science student
   at the **Sharif University of Technology**, **Computer Engineering** field. 
   I have +3 years of research experience in the fields of computer vision and machine learning; 
   For the last seven months, I was a research intern at the **Technical University of Munich** 
   working on explainability in graph neural networks under the co-supervision of Prof. Navab and 
   Prof. Rueckert. For +1.5 years, I am working as an R&D scientist at AI-Med where our 
   focus is to solve and enhance current problems of medical imaging, particularly 
-  mammography screening, under the supervision of Prof. Rabiee. I also have 1-year of experience 
+  mammography screening, under the supervision of Prof. Rabiee. I also have 1 year of experience 
   in the Reinforcement Learning field working on agent movement within a maze using 
   contrastive learning methods. My research interests are **Learning on Graphs** and **Graph Neural Networks**, 
   **Explainable Machine Learning**, and **Optimization**.
