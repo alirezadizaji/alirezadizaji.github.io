@@ -30,4 +30,22 @@
     <span style="color:#ff8080"> Rassa Ghavami Modegh, Ahmad Salimi, **Alireza Dizaji**, Hamid R. Rabiee</span> 
     <br><br>
 
+- name: Mammo
+  image: images/mammo.png
+  description: |
+    ## **Malignancy classification and lesion segmenation in mammography screening using semi/weak supervised methods.**
+    
+    ---
+    Breast cancer is considered the deadliest one among women. Our main goal is to provide 
+    an AI assistant product to help radiologists with more accurate and swifter decision-making 
+    through mammography screening and therefore increase the survival rate of our Iranian mothers 
+    and ladies. As a member of the scientific team, I have contributed to a huge project 
+    containing multiple sub-branches, including pre and post-image processing, malignancy classification, and lesion segmentation,
+    using mostly weakly and semi-supervised methods due to insufficient annotated data.
 
+    
+    <span style="color:#ff8080"> Nasrin Ahmadinejad (Radiologist), Nahid Sadighi (Radiologist), Rassa Ghavami Modegh,
+     **Alireza Dizaji**, Amin Rezaei, Maryam Rahmani, Arvin Arian, Salome Maghsudlu,
+    Saeedeh Shokri, Niloofar Pashaeifakhri, Mehran Arab Ahmadi, Ali Sefidmouy, 
+    Mahdi Ghaznavi, Amir Tofighi Zavareh, Hamed Dashti, Hamid R. Rabiee, Masoumeh Gity</span> 
+    <br><br>

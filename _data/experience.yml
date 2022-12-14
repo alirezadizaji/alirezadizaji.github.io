@@ -1,8 +1,14 @@
 - company: Technical University of Munich
-  job_title: Research Assistant
+  job_title: Undergraduate Research Assistant
+  dates: Dec 2022 - Present
+  description: |
+    At the moment, I am working on spatial-temporal skeleton pose action recognition using Graph Neural Networks, under the supervision of Prof. Rueckert.
+
+- company: Technical University of Munich
+  job_title: Research Intern
   dates: May 2022 - Nov 2022
   description: |
-    Through these seven months, I have been working under the co-supervision of Prof. 
+    Through those seven months, I have been working under the co-supervision of Prof. 
     Navab and Prof. Rueckert, where our main focus is to analyze the drawbacks of current 
     evaluation metrics for explanation methods in graph neural networks, and instead 
     devise a new evaluation metric to better represent the faithfulness of these explainers.
