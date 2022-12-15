@@ -61,7 +61,10 @@ jobs:
         echo "START_DARK=${{ steps.darkmode-time.outputs.data }}" >> $GITHUB_ENV
 
     - name: Disable dark mode
-      if: (( ${{env.HOUR}} >= ${{env.START_LIGHT}} && ${{env.HOUR}} <= ${{env.START_DARK}} )) 
+      env:
+        HOUR: 10
+        START_LIGHT: 9
+      if: (( ${{env.HOUR}} < ${{env.START_LIGHT}} )) 
       uses: fjogeleit/yaml-update-action@main
       with:
         valueFile: '_config.yml'
@@ -70,12 +73,12 @@ jobs:
         commitChange: true
         message: 'Disable Dark Mode.'
     
-    - name: Enable dark mode
-      if: (( ${{env.HOUR}} < ${{env.START_LIGHT}} || ${{env.HOUR}} > ${{env.START_DARK}} )) 
-      uses: fjogeleit/yaml-update-action@main
-      with:
-        valueFile: '_config.yml'
-        propertyPath: 'darkmode'
-        value: "!!bool 'true'"
-        commitChange: true
-        message: 'Enable Dark Mode.'
+    # - name: Enable dark mode
+     # if: ${{ env.HOUR < env.START_LIGHT || env.HOUR > env.START_DARK }}  
+     # uses: fjogeleit/yaml-update-action@main
+     # with:
+     #  valueFile: '_config.yml'
+     #  propertyPath: 'darkmode'
+     #  value: "!!bool 'true'"
+     #  commitChange: true
+     #  message: 'Enable Dark Mode.'
