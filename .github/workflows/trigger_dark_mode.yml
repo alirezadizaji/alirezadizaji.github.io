@@ -38,6 +38,9 @@ jobs:
 
     if: ${{ needs.init.outputs.trigger_darkmode != null }}
     steps:
+    - name: Checkout 🛎️
+      uses: actions/checkout@v3
+
     - name: Disable dark mode
       if: ${{ env.HOUR >= env.TRIGGER_TIME[0] && env.HOUR <= env.TRIGGER_TIME[1] }}  
       uses: fjogeleit/yaml-update-action@v0.12.3
