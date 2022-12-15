@@ -35,7 +35,7 @@ jobs:
       TRIGGER_TIME: ${{ needs.init.outputs.trigger_darkmode }}
       HOUR: ${{ needs.init.outputs.hour }}
 
-    if: ${{ env.TRIGGER_TIME != null }}
+    if: ${{ needs.init.outputs.trigger_darkmode != null }}
     steps:
     - name: Disable dark mode
       if: $ {{ env.HOUR >= env.TRIGGER_TIME.0 && env.HOUR <= env.TRIGGER_TIME.1 }}  
