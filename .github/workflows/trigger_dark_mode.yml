@@ -35,15 +35,14 @@ jobs:
 
     if: ${{ needs.init.outputs.trigger_darkmode != null }}
     env:
-      START_LIGHT: ${{ needs.init.outputs.trigger_darkmode['start_light'] }}
-      START_DARK: ${{ needs.init.outputs.trigger_darkmode['start_dark'] }}
+      TRIGGER_TIME: ${{ needs.init.outputs.trigger_darkmode }}
       HOUR: ${{ needs.init.outputs.hour }}
     steps:
     - name: Checkout 🛎️
       uses: actions/checkout@v3
 
     - name: Disable dark mode
-      if: ${{ env.HOUR >= env.START_LIGHT && env.HOUR <= env.START_DARK }}  
+      if: ${{ env.HOUR >= env.TRIGGER_TIME['start_light'] && env.HOUR <= env.TRIGGER_TIME['start_dark'] }}  
       uses: fjogeleit/yaml-update-action@main
       with:
         valueFile: '_config.yml'
@@ -53,7 +52,7 @@ jobs:
         message: 'Disable Dark Mode.'
     
     - name: Enable dark mode
-      if: ${{ env.HOUR < env.START_LIGHT || env.HOUR > env.START_DARK }}  
+      if: ${{ env.HOUR < env.TRIGGER_TIME['start_light'] || env.HOUR > env.TRIGGER_TIME['start_dark'] }}  
       uses: fjogeleit/yaml-update-action@main
       with:
        valueFile: '_config.yml'
