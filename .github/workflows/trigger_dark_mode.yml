@@ -47,7 +47,7 @@ jobs:
       with:
         valueFile: '_config.yml'
         propertyPath: 'darkmode'
-        value: false
+        value: "!!bool 'false'"
         commitChange: true
         message: 'Disable Dark Mode.'
     
@@ -57,6 +57,6 @@ jobs:
       with:
         valueFile: '_config.yml'
         propertyPath: 'darkmode'
-        value: true
+        value: "!!bool 'true'"
         commitChange: true
         message: 'Enable Dark Mode.'
