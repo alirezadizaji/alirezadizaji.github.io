@@ -2,8 +2,10 @@ repository: alirezadizaji/alirezadizaji.github.io
 version: 1
 name: Alireza Dizaji
 email: alirezadizaji24@gmail.com
-trigger_darkmode: null
-darkmode: true
+trigger_darkmode:
+  - 9
+  - 15
+darkmode: 'true'
 last_updated_time: 15th Dec 2022
 github_username: alirezadizaji
 linkedin_username: alireza-dizaji-43a634194
