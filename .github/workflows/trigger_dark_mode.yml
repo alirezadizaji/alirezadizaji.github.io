@@ -32,19 +32,18 @@ jobs:
   trigger-darkmode:
     runs-on: ubuntu-latest
     needs: init
-    env:
-      TRIGGER_TIME: ${{ needs.init.outputs.trigger_darkmode }}
-      LIGHT_KEY: start_light
-      DARK_KEY: start_dark
-      HOUR: ${{ needs.init.outputs.hour }}
 
     if: ${{ needs.init.outputs.trigger_darkmode != null }}
+    env:
+      START_LIGHT: ${{ needs.init.outputs.trigger_darkmode.start_light }}
+      START_DARK: ${{ needs.init.outputs.trigger_darkmode.start_light }}
+      HOUR: ${{ needs.init.outputs.hour }}
     steps:
     - name: Checkout 🛎️
       uses: actions/checkout@v3
 
     - name: Disable dark mode
-      if: ${{ env.HOUR >= env.TRIGGER_TIME.start_light && env.HOUR <= env.TRIGGER_TIME.start_dark }}  
+      if: ${{ env.HOUR >= env.START_LIGHT && env.HOUR <= env.START_DARK }}  
       uses: fjogeleit/yaml-update-action@main
       with:
         valueFile: '_config.yml'
@@ -54,7 +53,7 @@ jobs:
         message: 'Disable Dark Mode.'
     
     - name: Enable dark mode
-      if: ${{ env.HOUR < env.TRIGGER_TIME.start_light || env.HOUR > env.TRIGGER_TIME.start_dark }}  
+      if: ${{ env.HOUR < env.START_LIGHT || env.HOUR > env.START_DARK }}  
       uses: fjogeleit/yaml-update-action@main
       with:
        valueFile: '_config.yml'
