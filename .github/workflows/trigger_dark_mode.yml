@@ -39,7 +39,7 @@ jobs:
     if: ${{ needs.init.outputs.trigger_darkmode != null }}
     steps:
     - name: Disable dark mode
-      if: $ {{ env.HOUR >= env.TRIGGER_TIME.0 && env.HOUR <= env.TRIGGER_TIME.1 }}  
+      if: ${{ env.HOUR >= env.TRIGGER_TIME.0 && env.HOUR <= env.TRIGGER_TIME.1 }}  
       uses: fjogeleit/yaml-update-action@v0.12.3
       with:
         valueFile: '_config.yml'
@@ -49,7 +49,7 @@ jobs:
         message: 'Disable Dark Mode.'
     
     - name: Enable dark mode
-      if: $ {{ env.HOUR < env.TRIGGER_TIME.0 || env.HOUR > env.TRIGGER_TIME.1 }}  
+      if: ${{ env.HOUR < env.TRIGGER_TIME.0 || env.HOUR > env.TRIGGER_TIME.1 }}  
       uses: fjogeleit/yaml-update-action@v0.12.3
       with:
         valueFile: '_config.yml'
