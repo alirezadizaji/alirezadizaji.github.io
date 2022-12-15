@@ -2,14 +2,11 @@ repository: alirezadizaji/alirezadizaji.github.io
 version: 1
 name: Alireza Dizaji
 email: alirezadizaji24@gmail.com
-darkmode: false
+darkmode: true
 trigger_darkmode:
-  start_light: 9  # To start lightmode (hour)
-  start_dark: 15 # To start darkmode (hour)
-
-
+  start_light: 9
+  start_dark: 15
 last_updated_time: 15th Dec 2022
-
 github_username: alirezadizaji
 linkedin_username: alireza-dizaji-43a634194
 googlescholar_username: rTdeQaMAAAAJ
