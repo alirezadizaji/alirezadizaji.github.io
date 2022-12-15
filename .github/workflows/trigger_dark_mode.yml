@@ -55,7 +55,7 @@ jobs:
     
     - name: Enable dark mode
       if: ${{ env.HOUR < env.TRIGGER_TIME[env.LIGHT_KEY] || env.HOUR > env.TRIGGER_TIME[env.DARK_KEY] }}  
-      run: echo ${{ env.TRIGGER_TIME[env.LIGHT_KEY] }}
+      run: echo $TRIGGER_TIME[$LIGHT_KEY]
       #uses: fjogeleit/yaml-update-action@main
       #with:
        # valueFile: '_config.yml'
