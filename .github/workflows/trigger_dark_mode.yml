@@ -55,10 +55,12 @@ jobs:
         file: '_config.yml'
         key-path: '["trigger_darkmode", "start_dark"]'
 
+    - name: Set light and dark start time env variables
+      run: |
+        echo "START_LIGHT=${{ steps.lightmode-time.outputs.data }}" >> $GITHUB_ENV
+        echo "START_DARK=${{ steps.darkmode-time.outputs.data }}" >> $GITHUB_ENV
+
     - name: Disable dark mode
-      env:
-        START_LIGHT: ${{ steps.lightmode-time.outputs.data }}
-        START_DARK: ${{ steps.darkmode-time.outputs.data }}
       if: ${{ env.HOUR >= env.START_LIGHT && env.HOUR <= env.START_DARK }}  
       uses: fjogeleit/yaml-update-action@main
       with:
@@ -69,9 +71,6 @@ jobs:
         message: 'Disable Dark Mode.'
     
     - name: Enable dark mode
-      env:
-        START_LIGHT: ${{ steps.lightmode-time.outputs.data }}
-        START_DARK: ${{ steps.darkmode-time.outputs.data }}
       if: ${{ env.HOUR < env.START_LIGHT || env.HOUR > env.START_DARK }}  
       uses: fjogeleit/yaml-update-action@main
       with:
