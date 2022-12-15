@@ -1,8 +1,10 @@
 name: Last Updated Time
+
 on:
   push:
     branches:
       - master
+
 jobs:
   update-last-time:
     runs-on: ubuntu-latest

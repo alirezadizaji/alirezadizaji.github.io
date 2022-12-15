@@ -1,0 +1,56 @@
+name: Trigger Dark Mode
+
+on:
+  schedule:
+    - cron: '* 6 * * *'
+
+jobs:
+  init:
+    runs-on: ubuntu-latest
+
+    outputs:
+      trigger_darkmode: ${{ steps.trigger-darkmode.outputs.data }}
+      hour: ${{ steps.current-time.outputs.hour }}
+
+    steps:
+    - name: Checkout 🛎️
+      uses: actions/checkout@v3
+    
+    - name: Get trigger darkmode variable
+        id: trigger-darkmode
+        uses: jbutcher5/read-yaml@1.6.0
+        with:
+          file: '_config.yml'
+          key-path: '["trigger_darkmode"]'
+
+    - name: Get current time
+      uses: josStorer/get-current-time@v2.0.2
+      id: current-time
+
+  trigger-dark-mode:
+    needs: init
+    env:
+      TRIGGER_TIME: ${{ needs.init.outputs.trigger_darkmode }}
+      HOUR: ${{ needs.init.outputs.hour }}
+
+    if: ${{ $TRIGGER_TIME != null }}
+
+    - name: Disable dark mode
+      if: $ {{ $HOUR >= $TRIGGER_TIME.0 && $HOUR <= $TRIGGER_TIME.1 }}  
+      uses: fjogeleit/yaml-update-action@v0.12.3
+      with:
+        valueFile: '_config.yml'
+        propertyPath: 'darkmode'
+        value: false
+        commitChange: true
+        message: 'Disable Dark Mode.'
+    
+    - name: Enable dark mode
+      if: $ {{ $HOUR < $TRIGGER_TIME.0 || $HOUR > $TRIGGER_TIME.1 }}  
+      uses: fjogeleit/yaml-update-action@v0.12.3
+      with:
+        valueFile: '_config.yml'
+        propertyPath: 'darkmode'
+        value: true
+        commitChange: true
+        message: 'Enable Dark Mode.'
