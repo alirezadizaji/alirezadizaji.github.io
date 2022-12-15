@@ -19,7 +19,7 @@ jobs:
       uses: actions/checkout@v3
     
     - name: Get trigger darkmode variable
-      uses: jbutcher5/read-yaml@1.6
+      uses: jbutcher5/read-yaml@1.6.0
       id: trigger-darkmode
       with:
         file: '_config.yml'
@@ -39,24 +39,23 @@ jobs:
     if: ${{ needs.init.outputs.trigger_darkmode != null }}
     steps:
     - name: Disable dark mode
-      run: echo $HOUR
-      # if: ${{ env.HOUR >= env.TRIGGER_TIME.0 && env.HOUR <= env.TRIGGER_TIME.1 }}  
+      if: ${{ env.HOUR >= env.TRIGGER_TIME[0] && env.HOUR <= env.TRIGGER_TIME[1] }}  
 
-      # uses: fjogeleit/yaml-update-action@v0.12.3
-      # with:
-      #   valueFile: '_config.yml'
-      #   propertyPath: 'darkmode'
-      #   value: false
-      #   commitChange: true
-      #   message: 'Disable Dark Mode.'
+      uses: fjogeleit/yaml-update-action@v0.12.3
+      with:
+        valueFile: '_config.yml'
+        propertyPath: 'darkmode'
+        value: false
+        commitChange: true
+        message: 'Disable Dark Mode.'
     
     - name: Enable dark mode
-      run: echo "$TRIGGER_TIME[0]"
-      # if: ${{ env.HOUR < env.TRIGGER_TIME.0 || env.HOUR > env.TRIGGER_TIME.1 }}  
-      # uses: fjogeleit/yaml-update-action@v0.12.3
-      # with:
-      #   valueFile: '_config.yml'
-      #   propertyPath: 'darkmode'
-      #   value: true
-      #   commitChange: true
-      #   message: 'Enable Dark Mode.'
+      run: echo $HOUR
+      if: ${{ env.HOUR < env.TRIGGER_TIME[0] || env.HOUR > env.TRIGGER_TIME[1] }}  
+      uses: fjogeleit/yaml-update-action@v0.12.3
+      with:
+        valueFile: '_config.yml'
+        propertyPath: 'darkmode'
+        value: true
+        commitChange: true
+        message: 'Enable Dark Mode.'
