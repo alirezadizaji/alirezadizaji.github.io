@@ -1,49 +1,15 @@
-### Site
 repository: alirezadizaji/alirezadizaji.github.io
-# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
-
-### Content configuration version
 version: 1
-
-### Personal info
 name: Alireza Dizaji
-# title: Your job title
 email: alirezadizaji24@gmail.com
-# email_title: Email (Email title override)
-# phone: Your phone number (optional)
-# phone_title: Phone (Phone title override)
-# website: Your website (eg. https://google.com)(optional)
-# website_title: Web (Website title override)
-
-### Dark Mode (true/false/never)
 darkmode: true
-
-### Last Update Time
-last_updated_time: 13th Dec 2022
-
-### Social links
-github_username:  alirezadizaji
+last_updated_time: 15th Dec 2022
+github_username: alirezadizaji
 linkedin_username: alireza-dizaji-43a634194
 googlescholar_username: rTdeQaMAAAAJ
-### Additional icon links
-# additional_links:
-# - title: Link name
-#   icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-#   url: Link url (eg. https://google.com)
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-#   url: Link url (eg. https://google.com)
-
-### Google Analytics and Tag Manager
-### Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
-
-### About Section
 about_title: About Me
 about_profile_image: images/me.jpeg
-about_content: | 
+about_content: |
   **CV: [PDF](https://alirezadizaji.github.io/files/CV.pdf)**
 
   My name is Alireza Dizaji and I have recently graduated as a Bachelor of Science student
@@ -58,16 +24,15 @@ about_content: |
   contrastive learning methods. My research interests are **Learning on Graphs** and **Graph Neural Networks**, 
   **Explainable Machine Learning**, and **Optimization**.
 more_content: |
-      Alongside my interests in science and technology, some of my other hobbies are:
-        - Reading books: I am a big fan of Fantasy books, and mostly
-        spent my leisure time reading them. So far, I have read the <i> Hobbit </i>, <i> Lord of the Rings </i> (**My most favorite one**),
-        and <i> Harry Potter </i> series in English, and they (particularly the second one) have significantly 
-        changed my attitude towards fate, reasons behind our being, and our path in our lives; 
-        Indeed after reading them, I experienced how great books could marvelously direct your thought, 
-        and I always ask for or suggest such books preferably in the fantasy genre.
-        - Watching movies
-        - Travelling and nature
-
+  Alongside my interests in science and technology, some of my other hobbies are:
+    - Reading books: I am a big fan of Fantasy books, and mostly
+    spent my leisure time reading them. So far, I have read the <i> Hobbit </i>, <i> Lord of the Rings </i> (**My most favorite one**),
+    and <i> Harry Potter </i> series in English, and they (particularly the second one) have significantly 
+    changed my attitude towards fate, reasons behind our being, and our path in our lives; 
+    Indeed after reading them, I experienced how great books could marvelously direct your thought, 
+    and I always ask for or suggest such books preferably in the fantasy genre.
+    - Watching movies
+    - Travelling and nature
 content:
   - title: Experience
     layout: list
@@ -77,7 +42,7 @@ content:
         sub_title: R&D scientist
         caption: April 2021 - present
         link: https://aimed-sharif.ir/
-        description: | 
+        description: |
           AI-Med is a multidisciplinary research consortium **utilizing artificial intelligence
           technologies to improve the quality and accuracy of digital health services**.
           since April 2021, I joined as **research and development scientist** here where
@@ -87,44 +52,41 @@ content:
           in order to maintain our results same for the **in-private dataset**, we are currently
           developing **weakly-supervised methods** to more precisely label and generate ground-truth ROIs for them.
           Moreover, we have designed several side tools to get real-time feedbacks from experienced radiologists for labeling. 
-      
       - layout: left
         title: Sharif University of Technology
         sub_title: Research Assistant
         caption: August 2020 - March 2021
-        description: | 
+        description: |
           I joined [**DML lab**](http://dml.ce.sharif.edu/dmlsite/) as a **Research assistant** where I was working
           on the impact of **contrastive learning** approaches on **deep reinforcement-learning** algorithms.
           to be more specific, I implemented [**CURL**](https://arxiv.org/pdf/2004.04136.pdf?ref=https://githubhelp.com) 
           and [**SIMCLR**](https://arxiv.org/pdf/2002.05709.pdf) (via Pytorch) algorithms to improve movement of an agent
           within Maze environment.
-
       - layout: left
         title: Sharif University of Technology
         sub_title: Teaching Assistant
         caption: Februrary 2019 - July 2021
-        description: | 
+        description: |
           since my second semester, I have collaborated as a **teaching assistant** with several
           faculty members of **computer engineering department**. all courses that I have contributed are listed below:
 
           **Spring 2021**
           - Machine learning (M.Sc. course), Dr. Rohban
           - Modern information retrival, Dr. Soleymani
-          
-          
+
+
           **Fall 2020**
           - Artificial intelligence, Dr. Rohban
           - Linear algebra, Prof. Rabiee
-          
-          
+
+
           **spring 2020**
           - Computer architecture, Prof. Asadi
           - Data structures and algorithms, Dr. Safarnejad broujeni
-          
-          
+
+
           **spring 2019**
           - Advanced programming, Mr. Hatami
-
   - title: Education
     layout: list
     content:
@@ -132,9 +94,7 @@ content:
         title: Sharif University of Technology
         sub_title: B.Sc. Computer Engineering
         caption: 2017-present
-        # quote: >
-        #   Short institution or course description (optional)
-        description: | 
+        description: |
           GPA: 17.90/20 (**last six semesters: 18.51/20**)
 
           **Related courses**
@@ -143,21 +103,17 @@ content:
           machine learning (audited, online Stanford), artificial intelligence, linear algebra,
           data structures and algorithms, introduction to bioinformatics, modern information retrieval,
           design of algorithms, probability and statistics, discrete structures.
-      
       - layout: left
         title: Allame Amini highschool
         sub_title: Diploma
         caption: 2013-2017
-        # quote: >
-        # Short institution or course description (optional)
-        description: | 
+        description: |
           I received my Diploma in Mathematics and Physics from Allame Amini highschool,
           where I was ranked 24th out of 350k students in Iranian nationwide mathematics
           exam (Konkur).
-
   - title: A Little More About Me
     layout: text
-    content: | 
+    content: |
       Alongside my interests in science and technology, some of my other hobbies are:
         - Reading books: I am a big fan of Fantasy books, and mostly
         spent my leisure time reading them. So far, I have read the <i> Hobbit </i>, <i> Lord of the Rings </i> (**My most favorite one**)
@@ -167,30 +123,20 @@ content:
         and I always ask for or suggest such books preferably in the fantasy genre.  
         - Watching movies
         - Travelling and nature
-### Footer
 footer_show_references: false
-# references_title: References on request (Override references text)
-
-### Build settings
-# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
-# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
-
 sass:
   sass_dir: _sass
   style: compressed
-
 plugins:
- - jekyll-seo-tag
-
-exclude : [
-  "Gemfile",
-  "Gemfile.lock",
-  "node_modules",
-  "vendor/bundle/",
-  "vendor/cache/",
-  "vendor/gems/",
-  "vendor/ruby/",
-  "lib/",
-  "scripts/",
-  "docker-compose.yml",
-  ]
+  - jekyll-seo-tag
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - lib/
+  - scripts/
+  - docker-compose.yml
