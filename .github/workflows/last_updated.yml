@@ -22,4 +22,5 @@ jobs:
         valueFile: '_config.yml'
         propertyPath: 'last_updated_time'
         value: ${{ steps.current-time.outputs.formattedTime }}
-        commitChange: false
+        commitChange: true
+        message: 'Last Time Updated.'
