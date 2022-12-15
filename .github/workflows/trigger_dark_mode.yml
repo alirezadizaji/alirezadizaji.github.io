@@ -64,7 +64,7 @@ jobs:
       env:
         HOUR: 10
         START_LIGHT: 9
-      if: (( env.HOUR >= env.START_LIGHT )) 
+      if: (( ${{env.HOUR}} > ${{env.START_LIGHT}} )) 
       uses: fjogeleit/yaml-update-action@main
       with:
         valueFile: '_config.yml'
