@@ -2,12 +2,7 @@ repository: alirezadizaji/alirezadizaji.github.io
 version: 1
 name: Alireza Dizaji
 email: alirezadizaji24@gmail.com
-
-darkmode: true
-
-# To overlook dynamic darkmode triggering
-# trigger_darkmode: null
-
+darkmode: false
 trigger_darkmode:
   start_light: 9  # To start lightmode (hour)
   start_dark: 15 # To start darkmode (hour)
