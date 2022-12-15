@@ -5,7 +5,7 @@ email: alirezadizaji24@gmail.com
 trigger_darkmode:
   - 9
   - 15
-darkmode: 'true'
+darkmode: true
 last_updated_time: 15th Dec 2022
 github_username: alirezadizaji
 linkedin_username: alireza-dizaji-43a634194
