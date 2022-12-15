@@ -27,7 +27,7 @@ jobs:
       uses: josStorer/get-current-time@v2.0.2
       id: current-time
 
-  trigger-dark-mode:
+  triggerdarkmode:
     needs: init
     env:
       TRIGGER_TIME: ${{ needs.init.outputs.trigger_darkmode }}
