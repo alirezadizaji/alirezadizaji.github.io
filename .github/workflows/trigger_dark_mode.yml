@@ -44,7 +44,7 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Disable dark mode
-      if: ${{ env.HOUR >= env.TRIGGER_TIME[env.LIGHT_KEY] && env.HOUR <= env.TRIGGER_TIME[env.DARK_KEY] }}  
+      if: ${{ env.HOUR >= env.TRIGGER_TIME.start_light && env.HOUR <= env.TRIGGER_TIME.start_dark }}  
       uses: fjogeleit/yaml-update-action@main
       with:
         valueFile: '_config.yml'
@@ -54,12 +54,11 @@ jobs:
         message: 'Disable Dark Mode.'
     
     - name: Enable dark mode
-      if: ${{ env.HOUR < env.TRIGGER_TIME[env.LIGHT_KEY] || env.HOUR > env.TRIGGER_TIME[env.DARK_KEY] }}  
-      run: echo "$TRIGGER_TIME[$LIGHT_KEY]"
-      #uses: fjogeleit/yaml-update-action@main
-      #with:
-       # valueFile: '_config.yml'
-       # propertyPath: 'darkmode'
-       # value: "!!bool 'true'"
-       # commitChange: true
-       # message: 'Enable Dark Mode.'
+      if: ${{ env.HOUR < env.TRIGGER_TIME.start_light || env.HOUR > env.TRIGGER_TIME.start_dark }}  
+      uses: fjogeleit/yaml-update-action@main
+      with:
+       valueFile: '_config.yml'
+       propertyPath: 'darkmode'
+       value: "!!bool 'true'"
+       commitChange: true
+       message: 'Enable Dark Mode.'
