@@ -5,10 +5,12 @@ email: alirezadizaji24@gmail.com
 
 darkmode: true
 
-# To overlook dynamic darkmode triggering -> trigger_darkmode: null
+# To overlook dynamic darkmode triggering
+# trigger_darkmode: null
+
 trigger_darkmode:
-  start_light: 9  # To start lightmode
-  start_dark: 15 # To start darkmode
+  start_light: 9  # To start lightmode (hour)
+  start_dark: 15 # To start darkmode (hour)
 
 
 last_updated_time: 15th Dec 2022
