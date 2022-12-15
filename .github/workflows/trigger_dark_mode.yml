@@ -63,7 +63,7 @@ jobs:
     - name: Disable dark mode
       env:
         HOUR: 10
-        START_LIGHT: 9
+        START_LIGHT: 19
       if: ${{ env.HOUR < env.START_LIGHT }} 
       uses: fjogeleit/yaml-update-action@main
       with:
