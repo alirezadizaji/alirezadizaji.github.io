@@ -2,7 +2,7 @@ name: Trigger Dark Mode
 
 on:
   schedule:
-    - cron: '2 * * * *'
+    - cron: '* 3,6,17,20 * * *'
   
   workflow_dispatch:
 
@@ -35,14 +35,31 @@ jobs:
 
     if: ${{ needs.init.outputs.trigger_darkmode != null }}
     env:
-      TRIGGER_TIME: ${{ needs.init.outputs.trigger_darkmode }}
       HOUR: ${{ needs.init.outputs.hour }}
+    
     steps:
     - name: Checkout 🛎️
       uses: actions/checkout@v3
+    
+    - name: Get light mode start time
+      uses: jbutcher5/read-yaml@1.6
+      id: lightmode-time
+      with:
+        file: '_config.yml'
+        key-path: '["trigger_darkmode", "start_light"]'
+    
+    - name: Get dark mode start time
+      uses: jbutcher5/read-yaml@1.6
+      id: darkmode-time
+      with:
+        file: '_config.yml'
+        key-path: '["trigger_darkmode", "start_dark"]'
 
     - name: Disable dark mode
-      if: ${{ env.HOUR >= env.TRIGGER_TIME['start_light'] && env.HOUR <= env.TRIGGER_TIME['start_dark'] }}  
+      env:
+        START_LIGHT: ${{ steps.lightmode-time.outputs.data }}
+        START_DARK: ${{ steps.darkmode-time.outputs.data }}
+      if: ${{ env.HOUR >= env.START_LIGHT && env.HOUR <= env.START_DARK }}  
       uses: fjogeleit/yaml-update-action@main
       with:
         valueFile: '_config.yml'
@@ -52,7 +69,10 @@ jobs:
         message: 'Disable Dark Mode.'
     
     - name: Enable dark mode
-      if: ${{ env.HOUR < env.TRIGGER_TIME['start_light'] || env.HOUR > env.TRIGGER_TIME['start_dark'] }}  
+      env:
+        START_LIGHT: ${{ steps.lightmode-time.outputs.data }}
+        START_DARK: ${{ steps.darkmode-time.outputs.data }}
+      if: ${{ env.HOUR < env.START_LIGHT || env.HOUR > env.START_DARK }}  
       uses: fjogeleit/yaml-update-action@main
       with:
        valueFile: '_config.yml'
