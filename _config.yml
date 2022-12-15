@@ -2,7 +2,7 @@ repository: alirezadizaji/alirezadizaji.github.io
 version: 1
 name: Alireza Dizaji
 email: alirezadizaji24@gmail.com
-darkmode: true
+darkmode: false
 trigger_darkmode:
   start_light: '09'
   start_dark: '21'
