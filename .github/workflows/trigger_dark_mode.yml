@@ -30,6 +30,7 @@ jobs:
       id: current-time
 
   trigger-darkmode:
+    runs-on: ubuntu-latest
     needs: init
     env:
       TRIGGER_TIME: ${{ needs.init.outputs.trigger_darkmode }}
