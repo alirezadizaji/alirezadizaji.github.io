@@ -51,7 +51,7 @@ jobs:
       #   message: 'Disable Dark Mode.'
     
     - name: Enable dark mode
-      run: echo $TRIGGER_TIME.0
+      run: echo env.TRIGGER_TIME.0
       # if: ${{ env.HOUR < env.TRIGGER_TIME.0 || env.HOUR > env.TRIGGER_TIME.1 }}  
       # uses: fjogeleit/yaml-update-action@v0.12.3
       # with:
