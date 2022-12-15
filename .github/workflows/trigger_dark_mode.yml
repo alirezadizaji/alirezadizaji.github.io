@@ -35,8 +35,8 @@ jobs:
 
     if: ${{ needs.init.outputs.trigger_darkmode != null }}
     env:
-      START_LIGHT: ${{ needs.init.outputs.trigger_darkmode[start_light] }}
-      START_DARK: ${{ needs.init.outputs.trigger_darkmode[start_dark] }}
+      START_LIGHT: ${{ needs.init.outputs.trigger_darkmode['start_light'] }}
+      START_DARK: ${{ needs.init.outputs.trigger_darkmode['start_dark'] }}
       HOUR: ${{ needs.init.outputs.hour }}
     steps:
     - name: Checkout 🛎️
