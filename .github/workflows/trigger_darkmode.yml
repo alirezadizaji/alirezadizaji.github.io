@@ -35,7 +35,11 @@ jobs:
     steps:
     - name: Checkout 🛎️
       uses: actions/checkout@v3
-   
+    
+    - name: Get current date
+      id: current-date
+      run: echo "::set-output name=hour::$(date +'%H')"
+    
     - name: Get light mode start time
       uses: jbutcher5/read-yaml@1.6
       id: lightmode-time
@@ -54,7 +58,7 @@ jobs:
       run: |
         echo "START_LIGHT=${{ steps.lightmode-time.outputs.data }}" >> $GITHUB_ENV
         echo "START_DARK=${{ steps.darkmode-time.outputs.data }}" >> $GITHUB_ENV
-        echo "HOUR=$(date + '%H')" >> $GITHUB_ENV
+        echo "HOUR=${{ steps.current-time.outputs.hour }}" >> $GITHUB_ENV
 
     - name: Disable dark mode
       if: ${{ env.HOUR >= env.START_LIGHT && env.HOUR <= env.START_DARK }} 
