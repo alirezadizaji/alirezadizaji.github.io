@@ -62,12 +62,6 @@ jobs:
         echo "START_LIGHT=${{ steps.lightmode-time.outputs.data }}" >> $GITHUB_ENV
         echo "START_DARK=${{ steps.darkmode-time.outputs.data }}" >> $GITHUB_ENV
 
-    - name: Make sure being numerical
-      run: |
-        echo ::set-env name=START_LIGHT::$(($START_LIGHT+0))
-        echo ::set-env name=START_DARK::$(($START_DARK+0))
-        echo ::set-env name=HOUR::$(($HOUR+0))
-
     - name: Disable dark mode
       if: ${{ env.HOUR >= env.START_LIGHT && env.HOUR <= env.START_DARK }} 
       uses: fjogeleit/yaml-update-action@main
