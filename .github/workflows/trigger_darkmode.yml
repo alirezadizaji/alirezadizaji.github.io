@@ -54,7 +54,7 @@ jobs:
       run: |
         echo "START_LIGHT=${{ steps.lightmode-time.outputs.data }}" >> $GITHUB_ENV
         echo "START_DARK=${{ steps.darkmode-time.outputs.data }}" >> $GITHUB_ENV
-        echo "NOW=$(date + '%H')" >> $GITHUB_ENV
+        echo "{NOW}={$(date + '%H')}" >> $GITHUB_ENV
     - name: Hello
       run: |
         echo $NOW
