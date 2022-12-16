@@ -58,7 +58,7 @@ jobs:
       run: |
         echo "START_LIGHT=${{ steps.lightmode-time.outputs.data }}" >> $GITHUB_ENV
         echo "START_DARK=${{ steps.darkmode-time.outputs.data }}" >> $GITHUB_ENV
-        echo "HOUR=${{ steps.current-time.outputs.hour }}" >> $GITHUB_ENV
+        echo "HOUR=${{ steps.current-date.outputs.hour }}" >> $GITHUB_ENV
 
     - name: Disable dark mode
       if: ${{ env.HOUR >= env.START_LIGHT && env.HOUR <= env.START_DARK }} 
