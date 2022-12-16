@@ -43,9 +43,8 @@ jobs:
     - name: Checkout 🛎️
       uses: actions/checkout@v3
     
-    steps:
-      - name: Set current date as env variable
-        run: echo "HOUR=$('%H')" >> $GITHUB_ENV
+    - name: Set current date as env variable
+      run: echo "HOUR=$('%H')" >> $GITHUB_ENV
     
     - name: Get light mode start time
       uses: jbutcher5/read-yaml@1.6
