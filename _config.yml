@@ -4,8 +4,8 @@ name: Alireza Dizaji
 email: alirezadizaji24@gmail.com
 darkmode: true
 trigger_darkmode:
-  start_light: 5
-  start_dark: 18
+  start_light: '05'
+  start_dark: '18'
 last_updated_time: 16th Dec 2022
 github_username: alirezadizaji
 linkedin_username: alireza-dizaji-43a634194
