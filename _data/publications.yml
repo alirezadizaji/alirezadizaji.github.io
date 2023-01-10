@@ -33,7 +33,7 @@
 - name: Mammo
   image: images/mammo.png
   description: |
-    ## **Can Artificial Intelligence Aid Radiologists in Reading 2D Digital Mammograms? (Medical publication)**
+    ## **An Artificial Intelligence-Based Computer Aided Detection Tool Helping Radiologists in Reading Digital Mammograms? (Medical publication)**
     
     ---
     Breast cancer is considered the deadliest one among women. Our main goal is to provide 
