@@ -33,7 +33,7 @@
 - name: Mammo
   image: images/mammo.png
   description: |
-    ## **Malignancy classification and lesion segmenation in mammography screening using semi/weak supervised methods.**
+    ## **Can Artificial Intelligence Aid Radiologists in Reading 2D Digital Mammograms? (Medical publication) **
     
     ---
     Breast cancer is considered the deadliest one among women. Our main goal is to provide 
