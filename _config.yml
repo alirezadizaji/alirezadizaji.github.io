@@ -2,7 +2,7 @@ repository: alirezadizaji/alirezadizaji.github.io
 version: 1
 name: Alireza Dizaji
 email: alirezadizaji24@gmail.com
-darkmode: true
+darkmode: false
 trigger_darkmode:
   start_light: '05'
   start_dark: '16'
@@ -14,9 +14,9 @@ about_title: About Me
 about_profile_image: images/me.jpeg
 about_content: |
   **CV: [PDF](https://alirezadizaji.github.io/files/CV.pdf)**
-  
+
   (**PLEASE NOTE: Sharif CE mail server (*@ce.sharif.edu) has been down since mid-January 2023 without giving any precautions. please be in contact with me via my Gmail or Yahoo.**)
-  
+
   My name is Alireza Dizaji and I have recently graduated as a Bachelor of Science student
   at the **Sharif University of Technology**, **Computer Engineering** field. 
   I have +3 years of research experience in the fields of computer vision and machine learning; 
