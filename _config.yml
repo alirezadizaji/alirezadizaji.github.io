@@ -2,11 +2,11 @@ repository: alirezadizaji/alirezadizaji.github.io
 version: 1
 name: Alireza Dizaji
 email: alirezadizaji24@gmail.com
-darkmode: true
+darkmode: false
 trigger_darkmode:
   start_light: '05'
   start_dark: '16'
-last_updated_time: 30th Mar 2023
+last_updated_time: 21st May 2023
 github_username: alirezadizaji
 linkedin_username: alireza-dizaji-43a634194
 googlescholar_username: rTdeQaMAAAAJ
