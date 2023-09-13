@@ -1,8 +1,17 @@
-- company: Technical University of Munich
-  job_title: Undergraduate Research Assistant
-  dates: Dec 2022 - Present
+- company: Quebec Artificial Intelligence institute (MILA)
   description: |
-    At the moment, I am working on spatial-temporal skeleton pose action recognition using Graph Neural Networks, under the supervision of Prof. Rueckert.
+
+  job_title: Graduate Research Assistant
+  dates: Sep. 2023 - present
+
+- company: Technical University of Munich
+  description: |
+    I was working on developing semi-supervised methods to recognize the type of gait disorders of patients using video-series skeleton data. 
+    The main challenge here was the data itself. 
+    Due to the high number of unlabeled data and a considerable amount of missing points of multiple video-series samples, we tried to develop a semi-supervised method to leverage most of these samples.
+
+  job_title: Undergraduate Research Assistant
+  dates: Dec 2022 - May 2023
 
 - company: Technical University of Munich
   job_title: Research Intern

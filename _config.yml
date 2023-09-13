@@ -1,33 +1,26 @@
 repository: alirezadizaji/alirezadizaji.github.io
 version: 1
 name: Alireza Dizaji
-email: alirezadizaji24@gmail.com
+email: alireza.dizaji@mila.quebec
 darkmode: true
 trigger_darkmode:
   start_light: '05'
   start_dark: '16'
 last_updated_time: 13th Sep 2023
 github_username: alirezadizaji
-linkedin_username: alireza-dizaji-43a634194
+linkedin_username: gil-estel-dizaji-43a634194
 googlescholar_username: rTdeQaMAAAAJ
 about_title: About Me
 about_profile_image: images/me.jpeg
 about_content: |
   **CV: [PDF](https://alirezadizaji.github.io/files/CV.pdf)**
 
-  (**PLEASE NOTE: Sharif CE mail server (*@ce.sharif.edu) has been down since mid-January 2023 without giving any precautions. please be in contact with me via my Gmail or Yahoo.**)
-
-  My name is Alireza Dizaji and I graduated as a Bachelor of Science student
-  at the **Sharif University of Technology**, **Computer Engineering** field. 
-  I have +3 years of research experience in the fields of computer vision and machine learning; 
-  For the last four months, under the supervision of Prof. Rueckert at **Technical University of Munich**, As an Undergrad RA 
-  I have been working on human-pose action recognition using spatio-temporal human-skeleton graphs, at the intersection of geometric deep learning and semi-supervised learning.
-  From May-Nov 2022, I was a research intern at the **Technical University of Munich** 
-  working on explainability in graph neural networks under the co-supervision of Prof. Navab and 
-  Prof. Rueckert. For +1.5 years, I was an R&D scientist at CommaMed where on the ML academic side, our main contribution was to tackle the current 
-  issues of pooling layers and bring a novel attention-based pooling layer by using weakly-supervised learning, under the supervision of Prof. Rabiee. I also have 1 year of experience 
-  in the Reinforcement Learning field working on agent movement within a maze using 
-  contrastive learning methods. My research interests are **Computer Vision**, **Geometric Deep Learning**, **Explainable Machine Learning**, and **Causality**.
+  I'm Alireza Dizaji and I'm now settled in Montreal, Quebec. I'm doing my first year Ph.D. at Quebec Artificial Intelligence Institute, shortly known as MILA, and at Universite de Montreal. 
+  Before here, I graduated as a Bachelor of Science student at the Sharif University of Technology, Computer Engineering field; I have 3+ years of research experience in machine learning; Between May 2022 and 2023, I was an intern at the Technical University of Munich working on 
+  two projects: 1) Gait-disorder recognition for video-series skeleton graphs using semi-supervised methods and 2) benchmarking explainability methods at Graph Neural Networks, under the supervision of 
+  Prof. Daniel Rueckert and Nassir Navab. 
+  Between April 2021 - December 2022, I was an R&D scientist at CommaMed, where my main task was to develop AI methods for breast cancer detection. 
+  My research interests are **Computer vision**, **Graph Neural Networks**, **Tensor Networks**, and **Explainable Machine Learning**.
 more_content: |
   Alongside my interests in science and technology, some of my other hobbies are:
     - **Reading books**: I am a big fan of Fantasy books, and mostly
@@ -103,6 +96,11 @@ content:
     layout: list
     content:
       - layout: left
+        title: Quebec Artificial Intelligence Institute (MILA)
+        sub_title: Graduate Research Assistant
+        caption: Sep. 2023 - present
+        description: | 
+      - layout: left
         title: AI-Med
         sub_title: R&D scientist
         caption: April 2021 - present
@@ -158,7 +156,7 @@ content:
       - layout: left
         title: Sharif University of Technology
         sub_title: B.Sc. Computer Engineering
-        caption: 2017-present
+        caption: Sep. 2017-Sep. 2022
         description: |
           GPA: 17.90/20 (**last six semesters: 18.51/20**)
 
