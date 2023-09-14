@@ -2,7 +2,7 @@ repository: alirezadizaji/alirezadizaji.github.io
 version: 1
 name: Alireza Dizaji
 email: alireza.dizaji@mila.quebec
-darkmode: true
+darkmode: false
 trigger_darkmode:
   start_light: '05'
   start_dark: '16'
@@ -99,7 +99,7 @@ content:
         title: Quebec Artificial Intelligence Institute (MILA)
         sub_title: Graduate Research Assistant
         caption: Sep. 2023 - present
-        description: | 
+        description: ''
       - layout: left
         title: AI-Med
         sub_title: R&D scientist
